@@ -55,4 +55,4 @@ Did you install Python 2 or 3? Why?
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> Just type "python" in the console and the version number is the first thing that comes up.
+>> Just type "python" in the console and the version number is the first thing that comes up!
