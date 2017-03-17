@@ -48,8 +48,8 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> I installed 3, because apparently Metis recommends and encourages it :)\n
->> (even though Zed uses 2 in Learn Python the Hard Way so it's what I had been using)
+>> I installed version 3, because apparently Metis recommends and encourages it :)\n
+>> (even though Zed uses version 2 in Learn Python the Hard Way so it's what I had been using)
 
 ###Q2. Which Python Version Installed   
 
