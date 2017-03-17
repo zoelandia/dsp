@@ -48,14 +48,11 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I installed 3, because apparently Metis recommends and encourages it :)
+>> (even though Zed uses 2 in Learn Python the Hard Way so it's what I had been using)
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
-
-
+>> Just type "python" in the console and the version number is the first thing that comes up.
