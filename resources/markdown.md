@@ -186,7 +186,7 @@ What is the distribution of t-squared?
  * Beta
  * Bivariate Normal
 
->>REPLACE THIS TEXT WITH YOUR RESPONSE
+>>Oof. I know this was similar to a question on the Metis application (in Challenge 1), but I need to go back and review my t-scores!
 
 ---
 
@@ -197,7 +197,7 @@ In the scikit-learn's official source repo, about how many issues are outstandin
 3. 700  
 4. 7000  
 
->>REPLACE THIS TEXT WITH YOUR RESPONSE
+>>3. 700 (as of print(today()))
 
 ---
 
