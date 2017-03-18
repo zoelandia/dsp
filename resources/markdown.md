@@ -171,7 +171,9 @@ What is the most installed language in the world?
 - Spark
 - Javascript
 
->>REPLACE THIS TEXT WITH YOUR RESPONSE
+>>According to [ZDNet](http://www.zdnet.com/article/which-programming-languages-are-most-popular-and-what-does-that-even-mean/) 
+the most popular language is Java. However, given that it's not on the list above, and ZDNet's next three are C, Python, and 
+C++ (respectively), I'm going to go with Python.
 
 ***
 
