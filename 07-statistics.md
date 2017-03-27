@@ -95,11 +95,11 @@ P(fraternal | twin) = 7/12
 
 P(iden | same gender twin) = P(same gender | iden) * P(iden twin) / P(same gender twin)
 
-Assuming we're only talking about the world of twins (not all births), and that fraternal twins each have an independent and 50% chance of being each gender, that would be
+Assuming we're only talking about the world of twins (not all births), and that fraternal twins each have an independent and 50% chance of being each gender, that would be:
 
-(1/1)(5/12)/(8.5/12)
+(1/1)(5/12) / (8.5/12)
 
-Which means that there is a 59% chance that Elvis was an identical twin.
+Which means that there is a ~59% chance that Elvis was an identical twin.
 
 
 
