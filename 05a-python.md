@@ -40,9 +40,11 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 way to write a function as an expression (e.g., to assign it to a variable). So, for
 instance, you can use it to sort a list of names by last name:
 
-    names = ['James Livingston', 'Jon Greenberg', 'Ariana Strong', 'Dora Brent', 'Alex Bradford']
-    names.sort(key = lambda x: x.split()[1])  
-    print(names)
+```
+names = ['James Livingston', 'Jon Greenberg', 'Ariana Strong', 'Dora Brent', 'Alex Bradford']
+names.sort(key = lambda x: x.split()[1])  
+print(names)
+```
 
 ---
 
@@ -53,43 +55,57 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >> A list comprehension is to a for loop as lambda is to a function. It's a simplified
 way of creating a list; instead of a loop, it's just one expression. For example, you can make a list this way with a for loop:
 
-    numbers = []  
-    for i in range(30):  
-        numbers.append(i)  
+```
+numbers = []  
+for i in range(30):  
+    numbers.append(i)  
+```
 
 >> And then you can make a list of the squares using list comprehension:
 
-    squares = [i**2 for i in numbers]
+```
+squares = [i**2 for i in numbers]
+```
 
 >> Or by using map:
 
-    def square(x):  
-        return x**2  
+```
+def square(x):  
+    return x**2  
 
-    squares = list(map(square, numbers)
+squares = list(map(square, numbers)
+```
 
 >> If we want to make another list consisting of the even numbers, we can use filter:
 
-    def even(x):  
-        return x % 2 == 0  
+```
+def even(x):  
+    return x % 2 == 0  
 
-    evens = list(filter(even, numbers))
+evens = list(filter(even, numbers))
+```
 
 >> Or, again, list comprehension:
 
-    evens = [i for i in numbers if i % 2 == 0]
+```
+evens = [i for i in numbers if i % 2 == 0]
+```
 
 >> So list comprehensions can do the same things as map and filter, but usually with less syntax.
 >> Set comprehension is the same thing as list comprehension but with sets (duh). For example:
 
-    name = 'zoegreenjacobson'  
-    vowels = 'aeiou'  
-    consonants = set(i for i in name if i not in vowels)
+```
+name = 'zoegreenjacobson'  
+vowels = 'aeiou'  
+consonants = set(i for i in name if i not in vowels)
+```
 
 >> And here's an example of dictionary comprehension:
 
-    BMGapplicants = {'jon':70, 'james':69, 'jeremiah':77, 'jules':72.5}  
-    eligibles = {i:j for i,j in BMGapplicants.items() if 70<=j<=73}
+```
+BMGapplicants = {'jon':70, 'james':69, 'jeremiah':77, 'jules':72.5}  
+eligibles = {i:j for i,j in BMGapplicants.items() if 70<=j<=73}
+```
 ---
 
 ### Complete the following problems by editing the files below:
