@@ -52,11 +52,11 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 
 >> A list comprehension is to a for loop as lambda is to a function. It's a simplified
 way of creating a list; instead of a loop, it's just one expression. For example, you can make a list this way with a for loop:
->>
->> numbers = []  
->> for i in range(30):  
->>     numbers.append(i)  
->>
+
+    numbers = []  
+    for i in range(30):  
+        numbers.append(i)  
+
 >> And then you can make a list of the squares using list comprehension:
 >>
 >> squares = [i**2 for i in numbers]
