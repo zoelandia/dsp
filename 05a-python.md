@@ -36,13 +36,13 @@ spot in the set rather than a list having to go through every index spot.
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> '''Lambda is a way of defining a function. It's used when you want a (usually temporary)
+>> Lambda is a way of defining a function. It's used when you want a (usually temporary)
 way to write a function as an expression (e.g., to assign it to a variable). So, for
 instance, you can use it to sort a list of names by last name:
 
 names = ['James Livingston', 'Jon Greenberg', 'Ariana Strong', 'Dora Brent', 'Alex Bradford']
-names.sort(key = lambda x: x.split()[1])
-print(names)'''
+\n names.sort(key = lambda x: x.split()[1])
+\n print(names)
 
 ---
 
