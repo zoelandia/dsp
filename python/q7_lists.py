@@ -15,8 +15,12 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
-
+    counter = 0
+    for i in words:
+        if len(i) >= 2:
+            if i[0] == i[-1]:
+                counter += 1
+    return counter
 
 def front_x(words):
     """
@@ -32,8 +36,10 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
-
+    x_words = sorted(i for i in words if i[0] == "x")
+    rest_words = sorted(i for i in words if i[0] != "x")
+    all_words = x_words + rest_words
+    return all_words
 
 def sort_last(tuples):
     """
@@ -49,8 +55,7 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
-
+    return sorted(tuples, key = lambda x: x[-1])
 
 def remove_adjacent(nums):
     """
@@ -68,10 +73,12 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    non_dup = [nums[0]]
+    for i in nums:
+        if i != non_dup[-1]:
+            non_dup.append(i)
+    return non_dup
 
-
-def linear_merge(list1, list2):
     """
     Given two lists sorted in increasing order, create and return a
     merged list of all the elements in sorted order. You may modify
@@ -85,4 +92,16 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
-    raise NotImplementedError
+    merged_list = sorted(list1 + list2)
+    return merged_list
+
+    # I tried to use a linear approach but kept running into issues :(
+    # This was as far as I got:
+    """
+    merged_list = list1
+    for i in list2:
+        for j in merged_list:
+            if i < j:
+                merged_list.insert(merged_list.index(j), list2.pop[0])
+    return merged_list
+    """
