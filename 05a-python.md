@@ -40,9 +40,9 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 way to write a function as an expression (e.g., to assign it to a variable). So, for
 instance, you can use it to sort a list of names by last name:
 
-names = ['James Livingston', 'Jon Greenberg', 'Ariana Strong', 'Dora Brent', 'Alex Bradford']
-\n names.sort(key = lambda x: x.split()[1])
-\n print(names)
+names = ['James Livingston', 'Jon Greenberg', 'Ariana Strong', 'Dora Brent', 'Alex Bradford']  
+names.sort(key = lambda x: x.split()[1])  
+print(names)
 
 ---
 
